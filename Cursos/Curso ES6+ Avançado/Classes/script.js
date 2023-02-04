@@ -1,4 +1,3 @@
-// Existem essas duas formas de se declarar uma variável;
 class animal {
     //Método obrigatório para uma classe
     constructor(kind, sound){
