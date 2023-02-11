@@ -50,10 +50,12 @@ class Animal {
 
 //Todas as coisas que tenho em Animal, terei em Dog(name)
 class Dog extends Animal {
-    constructor(name, sound) {
-        //Como estamos estendendo uma class, precisamos primeiro chamar as coisas que estão na class 'mãe' com a palavra super, e como precisamos da var name, passamos ele como parâmetro
+    constructor(name, sound, kind) {
+        //Como estamos estendendo uma class, precisamos primeiro chamar as coisas que estão na class 'mãe' com a palavra super, e como precisamos de uma nova 
+        //var name que não está na class 'mãe', passamos ele como parâmetro
         super(name);
         this.sound = sound;
+        this.kind = kind
 
     }
 
@@ -64,4 +66,4 @@ class Dog extends Animal {
 }
 
 const elephant = new Animal('Dumbo');
-const dog = new Dog('rajado', 'au au');
+const dog = new Dog( 'au au', 'cachorro');

@@ -16,11 +16,11 @@ const User = {
 F O R M A  C O N V E N C I O N A L => {
 
     const name = User.personalInfor.name;
-const Github = User.social.Github;
+    const Github = User.social.Github;
 
-console.log(name);
+    console.log(name);
 
-console.log(Github);
+    console.log(Github);
 }
 
 */

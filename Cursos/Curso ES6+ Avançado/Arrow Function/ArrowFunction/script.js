@@ -35,3 +35,10 @@
         
     console.log(love)
 }*/
+
+const ireland = ['Dublin' , 'Galway' , 'Cork'];
+const love = ireland
+    .filter(name => name === 'Galway')
+    .map(name => `I love ${name}!` )
+    
+console.log(love)

@@ -16,3 +16,6 @@ console.log(arr)
 
 */
 
+arr.fill('Isaac', 10, 50);
+
+console.log(arr);
