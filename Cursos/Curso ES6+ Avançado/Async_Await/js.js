@@ -1,3 +1,4 @@
+
 // function ajaxTitulo(url){
 //     fetch(url)
 //         .then(data => data.json())
@@ -34,3 +35,27 @@ async function getPost(url){
     -> A conversão de uma promise para async/await é bem simples;
     -> O código fica com menos encadeamentos;
 */
+
+
+// Tratando ERRORS:
+
+async function Errors(url) {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+    
+        return data.map( post => {
+            console.log(post.title);
+        })       
+    } 
+    catch(err) {
+        console.error('Noooooo, we got an error :/', err)
+    }
+    finally {
+        console.log('FInalizado')
+    }
+
+}
+
+
+Errors('bla')
